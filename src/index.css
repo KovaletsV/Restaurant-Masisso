@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(238, 181, 111);
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  img {
+    width: 100%;
+  }
+  .section {
+    @apply container mx-auto pt-[7rem] lg:px-7 px-4
+  }
+  .btn {
+    @apply rounded-t-[1rem] rounded-bl-[1rem]  hover:bg-emerald-100 hover:scale-105 hover:duration-500 text-gray-900 font-bold bg-yellow-200  p-3 flex items-center gap-4  text-[1rem]
+  }
+}
